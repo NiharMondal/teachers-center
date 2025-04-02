@@ -27,13 +27,13 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+				className={`${geistSans.variable} ${geistMono.variable} antialiased bg-muted`}
 			>
 				<TopAppBar />
 
-				<SidebarProvider className="min-h-[calc(100vh-80px)]">
+				<SidebarProvider>
 					<AppSidebar />
-					<main className="px-5 py-2">
+					<main className="px-5 py-2 w-full">
 						<SidebarTrigger />
 						{children}
 					</main>

@@ -7,12 +7,12 @@ export default function TopAppBar() {
 			<div>
 				<span>Teacher&apos;s Center</span>
 			</div>
-			<div className="flex items-center justify-center gap-x-5">
+			<div className="flex items-center justify-center gap-x-5 ">
 				<div className="flex gap-x-6">
 					<UserCheck />
 					<BellRing />
 				</div>
-				<div className="border-l px-2 flex gap-x-2 items-center">
+				<div className="border-l border-gray-700 px-2 flex gap-x-2 items-center">
 					<Avatar>
 						<AvatarImage
 							src="https://github.com/shadcn.png"
