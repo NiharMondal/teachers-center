@@ -15,8 +15,8 @@ import Content from "./content/content";
 export default function SubTabs() {
 	return (
 		<div className="bg-white px-5 py-3 rounded-2xl space-y-4">
-			<div className="flex items-center justify-between border-b ">
-				<ul className="flex gap-x-5 items-center *:pb-2">
+			<div className="flex items-center justify-between border-b overflow-x-auto">
+				<ul className="flex gap-x-5 items-center *:pb-2 text-nowrap">
 					<li className="border-b-4 border-gray-800">Content</li>
 					<li>Course Details</li>
 					<li>Revisions</li>
@@ -31,7 +31,7 @@ export default function SubTabs() {
 					</li>
 				</ul>
 				<ul className="flex gap-x-5 items-center text-base">
-					<li className="border border-gray-700 rounded-4xl relative mr-10 -mt-2">
+					<li className="border border-gray-700 rounded-4xl relative mx-10">
 						<input
 							type="text"
 							className="outline-none h-full pl-8"

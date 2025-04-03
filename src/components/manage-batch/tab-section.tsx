@@ -8,7 +8,7 @@ export default function TabSection() {
 	return (
 		<div className="flex items-start justify-between pt-5 w-full">
 			<Tabs defaultValue="materials" className="w-full">
-				<div className="flex items-center justify-between">
+				<div className="flex items-center justify-between overflow-x-scroll">
 					<TabsList className="rounded-none  bg-muted *:text-blue-500 *:font-normal">
 						<TabsTrigger value="students">Students</TabsTrigger>
 						<TabsTrigger value="announcements">

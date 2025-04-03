@@ -4,6 +4,7 @@ import "./globals.css";
 import TopAppBar from "@/components/top-appbar";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
+
 const geistSans = Geist({
 	variable: "--font-geist-sans",
 	subsets: ["latin"],
@@ -34,7 +35,7 @@ export default function RootLayout({
 				<SidebarProvider>
 					<AppSidebar />
 					<main className="px-5 py-2 w-full">
-						<SidebarTrigger />
+						<SidebarTrigger title="Toggle Sidebar" />
 						{children}
 					</main>
 				</SidebarProvider>

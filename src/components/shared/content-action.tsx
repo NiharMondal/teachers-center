@@ -7,11 +7,31 @@ import {
 	SelectContent,
 	SelectItem,
 } from "../ui/select";
+import {
+	Tooltip,
+	TooltipContent,
+	TooltipProvider,
+	TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export default function ContentAction() {
 	return (
 		<div className="flex items-center gap-x-3">
-			<Info size={16} />
+			<TooltipProvider>
+				<Tooltip>
+					<TooltipTrigger>
+						<Info size={16} />
+					</TooltipTrigger>
+					<TooltipContent className="max-w-[220px]">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Esse quidem itaque molestias distinctio culpa
+							possimus deserunt! Cum alias laboriosam placeat.
+						</p>
+					</TooltipContent>
+				</Tooltip>
+			</TooltipProvider>
+
 			<Select>
 				<SelectTrigger
 					className="w-full md:w-[140px] bg-white "

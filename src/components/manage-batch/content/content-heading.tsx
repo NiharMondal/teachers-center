@@ -13,8 +13,8 @@ import ContentAction from "@/components/shared/content-action";
 
 export default function ContentHeading() {
 	return (
-		<div className="flex items-center justify-between">
-			<div className="flex items-center">
+		<div className="flex items-center gap-5 justify-between flex-wrap">
+			<div className="flex  items-center">
 				<CircleArrowLeft className="text-white bg-black rounded-full mr-5" />
 
 				<Breadcrumb>
